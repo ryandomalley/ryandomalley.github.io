@@ -9,3 +9,9 @@ if(!window.mobileCheck()){
     const video = document.getElementById("background-video");
     video.innerHTML = '<source id="video-source" src="media/Administration Building Timelapse.mp4">';
 }
+else {
+    document.body.style.backgroundImage = 'url("/media/fallback.jpg")';
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center center";
+    
+}
