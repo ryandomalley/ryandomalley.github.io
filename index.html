@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title>Ryan David O'Malley</title>
-        <script src="backend/pomotimer.js" defer></script>
         <link rel="stylesheet" href="styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet">
         <script src="https://kit.fontawesome.com/90b6865113.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <video autoplay muted loop id="background-video">
-            <source src="media/Administration Building Timelapse.mp4" type="video/mp4">
-        </video>
+
+        <div id="background-container">
+            <img id="fallback" src="media/fallback.jpg">
+            <video preload="none" autoplay muted loop id="background-video">
+            </video>
+        </div>
         <div id="flex-container">        
             <div id="under-construction">
 
@@ -32,4 +35,5 @@
             </div>
         </div>
     </body>
+    <footer><script src="app.js"></script></footer>
 </html>
