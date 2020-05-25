@@ -7,7 +7,7 @@ a:hover, a:active, a:visited, a{
 }
 
 html, body {
-    height: 100vh;
+    height: 100%;
 }
 
 h1 {
@@ -41,7 +41,7 @@ p {
     color: white;
 }
 
-#background-video {
+#background-img {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
