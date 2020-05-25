@@ -60,7 +60,9 @@ p {
 }
 
 #flex-container {
-    position: relative;
+    background-image: url("/media/fallback.jpg");
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
     display: flex;
     align-items: center;
