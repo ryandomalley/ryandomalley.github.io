@@ -2,27 +2,42 @@
     margin: 0;
 }
 
+a:hover, a:active, a:visited, a{
+    text-decoration: none;
+}
+
 html, body {
     height: 100%;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 48pt;
+    font-size: 1.5em;
 }
 
 p {
     font-family: 'Lora', Serif;
-    font-size: 14pt;
+}
+
+#box-title {
+    margin-bottom: 10px;
+}
+
+#education {
+    margin-bottom: 20px;
 }
 
 #profile {
     border-radius: 50%;
-    border: solid 4px white;
-    width: 100px;
+    border: solid 3px white;
+    width: 8em;
+    margin-bottom: 20px;
 }
 
 #under-construction {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
     background-color: rgba(18, 27, 77, 0.822);
     color: white;
 }
@@ -43,3 +58,66 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+#social-container{
+    display: flex;
+    width: 256px;
+    margin: auto;
+    justify-content: space-evenly;
+    color:white;
+}
+
+.fab, .fas {
+    color:white;
+    font-size: 2em;
+}
+
+.fab:hover, .fas:hover{
+    color: rgb(101, 150, 240);
+}
+
+@media only screen and (min-width: 375px) {
+    #under-construction {
+        padding: 20px;
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    html {
+        font-size: 18px;
+    }
+
+    #under-construction {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 30px;
+    }
+
+    #under-construction {
+        padding: 60px;
+        width: 1000px;
+    }
+
+    #social-container {
+        width: 600px;
+    }
+
+    #education {
+        margin-bottom: 40px;
+    }
+
+    #box-title {
+        margin-bottom: 20px;
+    }
+
+    #profile {
+        margin-bottom: 40px;
+    }
+
+}
+
